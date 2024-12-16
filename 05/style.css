@@ -1,0 +1,504 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./images/BG.jpeg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container-limitation { 
+  max-width: 1320px;
+  margin: 0 auto;
+}
+.container-center {
+  text-align: center;
+  display: grid;
+  place-items: center;
+}
+/* .poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+header {
+    width: 100%;
+    max-width: 1320px;
+    height: 96px;
+    margin: 0 auto;
+    display: flex; 
+    background-color: #fff;
+    position: relative; 
+}
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-frame {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.frame {
+    width: 58px;
+    height: 56px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgb(165, 61, 255);
+    color: #fff; 
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.text-logo {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    color: rgb(19, 34, 56);
+}
+.buttons {
+    display: flex;
+    align-items: center;
+}
+.Home button, .About button, 
+.Process button, .Portfolio button, 
+.Blog button, .Services button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  background: white;
+  border: 2px solid white;
+  padding: 12px 24px 12px 24px;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 16px;
+}
+.Contact button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  padding: 12px 24px 12px 24px;
+  background: rgb(165, 61, 255);
+  border: 2px solid rgb(165, 61, 255);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+.container-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1320px;
+  max-height: 754px;
+  margin: 0 auto;
+}
+.container-text {
+  max-width: 648px;
+  padding-right: 112px;
+}
+.photo {
+  margin: 0;
+  padding-top: 109px;
+  border-radius: 25px;
+  overflow: hidden; 
+}
+.photo img {
+  border-radius: 25px; 
+  object-fit: cover; 
+}
+h1 {
+  margin: 0;
+  font-size: 72px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  padding-bottom: 24px;
+  color: rgb(19, 34, 56);
+}
+p {
+  font-size: 18px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(85, 96, 112);
+  margin: 0;
+  padding-bottom: 24px; 
+}
+.hello-button button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  padding: 12px 24px 12px 24px;
+  background: rgb(165, 61, 255);
+  border: 2px solid rgb(165, 61, 255);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+.underline {
+  color: rgb(19, 34, 56);
+  text-decoration: underline; 
+  text-decoration-color: #ffcccc; 
+  text-decoration-thickness: 2px; 
+  text-underline-offset: 3px; 
+}
+h2 {
+  margin: 0;
+  font-size: 48px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  padding-top: 100px;
+  color: rgb(19, 34, 56);
+}
+.text-portfolio {
+  width: 577px;
+  height: 48px;
+  padding-top: 24px;
+  padding-bottom: 70px;
+}
+.container-photos {
+  display: flex;
+  gap: 20px; /* Відстань між елементами */
+  justify-content: center; /* Центрування всіх елементів */
+  flex-wrap: wrap; /* Дозволяє переносити елементи на новий рядок */
+}
+.portfolio-item {
+  width: 424px;
+  box-shadow: 0px 12px 64px 0px rgba(28, 25, 25, 0.12);
+  margin: 0;
+  border: 1px solid rgb(230, 232, 235);
+  background: rgb(255, 255, 255);
+  border-radius: 8px;
+}
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+    background: white;
+    border-radius: 8px;
+  }
+  
+.portfolio-text {
+    padding: 32px;
+  }
+  
+.category {
+    color: rgb(135, 144, 157);
+    font-size: 12px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 4px;
+    line-height: 16px;
+  }
+  
+h3 {
+    color: rgb(19, 34, 56);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 12px;
+    line-height: 24px;
+  }
+.description {
+    color: #555;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+  
+.case-study button {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    border: 2px solid rgb(165, 61, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    color: rgb(165, 61, 255);
+    width: 173px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+  }
+.buttom-more button {
+  width: 149px;
+  height: 48px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  background: rgb(165, 61, 255);
+  border: 2px solid rgb(165, 61, 255);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+}
+.buttom-more {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.project-idea {
+  background-color: rgb(19, 34, 56);
+  height: 472px;
+}
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  line-height: 56px;
+  font-size: 48px;
+  margin: 0;
+  padding-top: 100px;
+}
+h5 {
+  color: rgb(165, 172, 181);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 18px;
+  margin: 0;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.work-together button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 24px 12px 24px;
+  background: rgb(165, 61, 255);
+  border: 2px solid rgb(165, 61, 255);
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  width: 240px;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.happy-clients, .container-testimonial {
+  background-color: white;
+}
+.container {
+  display: flex; /* Використання flexbox */
+  flex-wrap: wrap; /* Перенос блоків на новий рядок */
+  gap: 24px; /* Відступи між блоками */
+  justify-content: space-between; /* Рівномірний розподіл блоків */
+  max-width: 1320px; /* Максимальна ширина для 6 блоків по 200px */
+  margin: 0 auto; /* Центрування контейнера на сторінці */
+  padding-bottom: 100px;
+}
+.container-company {
+  display: flex;
+  justify-content: center; /* Текст по центру горизонтально */
+  align-items: center; 
+  width: 200px; /* Загальний розмір */
+  height: 200px;
+  position: relative; /* Для позиціонування дочірніх елементів */
+  overflow: hidden; 
+}
+.google {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.letter-G {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  left: 30px;
+  top: 77px;
+}
+
+.letter-o1 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 66px;
+  top: 89px;
+}
+
+.letter-o2 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 91px;
+  top: 89px;
+}
+
+.small-g {
+  position: absolute;
+  width: 22px;
+  height: 33px;
+  left: 116px;
+  top: 89px;
+}
+.letter-l {
+  position: absolute;
+  width: 5px;
+  height: 34px;
+  left: 141px;
+  top: 78px;
+}
+.letter-e {
+  position: absolute;
+  width: 21px;
+  height: 23px;
+  left: 149px;
+  top: 89px;
+}
+.linked {
+  position: relative; /* Батьківський блок для позиціонування */
+  width: 100%; /* Займає всю ширину */
+  height: 100%; /* Займає всю висоту */
+}
+.link {
+  position: absolute;
+  width: 63px;
+  height: 25px;
+  left: 30px;
+  top: 88px;
+}
+.ed {
+  position: absolute;
+  width: 37px;
+  height: 24px;
+  left: 91px;
+  top: 89px;
+}
+.blue {
+  position: absolute;
+  height: 37px;
+  width: 37px;
+  left: 133px;
+  top: 82px;
+}
+.in {
+  position: absolute;
+  height: 25px;
+  left: 138px;
+  top: 88px;
+  width: 26px;
+}
+.amazon {
+  position: relative; /* Батьківський блок для позиціонування */
+  width: 100%; /* Займає всю ширину */
+  height: 100%; /* Займає всю висоту */
+}
+.amazon1 {
+  position: absolute;
+  width: 140px;
+  height: 25px;
+  left: 30px;
+  top: 94px;
+}
+.amazon2 {
+  position: absolute;
+  width: 67.55px;
+  height: 15.13px;
+  left: 50.02px;
+  top: 120.77px;
+}
+h6 {
+  color: rgb(51, 51, 51);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  margin: 0;
+}
+.text-one {
+  color: rgb(43, 56, 76);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 24px;
+}
+.text-name {
+  color: rgb(0, 0, 0); 
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.text-company {
+  color: rgb(0, 0, 0); 
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;  
+  padding-bottom: 100px;
+}
+.footer {
+  background-color: rgb(43, 56, 76);
+  height: 330px;
+}
+.container-info {
+  width: 100%;
+  max-width: 1320px;
+  height: 120px;
+  margin: 0 auto;
+  display: flex; 
+  position: relative; 
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 160px;
+}
+.footer-frame {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* padding-top: 52px; */
+}
+.frame {
+  width: 56px;
+  height: 56px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgb(165, 61, 255);
+  color: rgb(255, 255, 255); 
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.created-by {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+.buttons-footer{
+  display: flex;
+  /* align-items: center; */
+}
+.Home1 button, .About1 button, 
+.Services1 button, .Process1 button,
+.Portfolio1 button, .Blog1 button, .Contact1 button {
+font-family: "Work Sans", sans-serif;
+font-weight: 400;
+border: 2px solid rgb(43, 56, 76);
+padding: 12px 12px 12px 12px;
+background-color: transparent;
+cursor: pointer;
+font-size: 16px;
+color: rgb(240, 241, 243);
+}
+.notes {
+  font-size: 16px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
