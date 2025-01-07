@@ -7,6 +7,9 @@ body {
     padding: 0;
     height: 100vh;
 }
+.container {
+    padding-left: 24px;
+}
 main {
     width: 360px;
     height: 800px;
@@ -15,14 +18,12 @@ main {
 }
 .menu-vector {
     padding-top: 56px;
-    padding-left: 28px;
     padding-bottom: 23px;
 }
 h1 {
     font-family: "Inter", serif;
     font-size: 32px;
     font-weight: 600;
-    padding-left: 22px;
     margin: 0;
     padding-bottom: 17px;
 }
@@ -35,7 +36,6 @@ h1 {
     padding-left: 15px;
 }
 .input-search {
-    padding-left: 24px;
     padding-bottom: 29px;
 }
 .search-input::placeholder {
@@ -47,7 +47,6 @@ h1 {
 .categories {
     display: flex;
     gap: 24px;
-    padding-left: 24px;
     padding-bottom: 32px;
 }
 .category {
@@ -98,14 +97,12 @@ h2 {
     font-size: 20px;
     font-weight: 500;
     color: rgb(0, 48, 73);
-    padding-left: 24px;
     padding-bottom: 26px;
 }
 .burgers {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-left: 24px;
 }
 .burger {
     width: 316px;
