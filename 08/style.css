@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    margin: 0 auto;
+    background: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* font-family: "Inter", serif; */
+/* font-family: "Lora", serif; */
+.header-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.book-menu {
+    display: flex;
+    gap: 33px;
+    align-items: center;
+}
+.button-menu button {
+    width: 193px;
+    height: 61px;
+    border-radius: 6px;
+    background: rgb(33, 158, 188);
+    border: none;
+    font-family: "Inter", serif;;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.container-photo {
+    width: 830.87px;
+    height: 997.34px;
+    padding-left: 16.93px;
+}
+.container-info {
+    margin: 0 auto;
+    width: 93%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-aboutplaces {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-family: "Lora", serif;
+    font-size: 88px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding-bottom: 117px;
+}
+.container-choices {
+    display: flex;
+    flex-direction: column;
+}
+.explore-india {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 52px;
+    padding-bottom: 40px;
+}
+h2 {
+    font-family: "Lora", serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.button-country button {
+    width: 124px;
+    height: 51px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: 0;
+    color: white;
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+.button-country img {
+    padding-left: 8px;
+}
+.places-photos {
+    display: flex;
+    flex-direction: row;
+}
+.arrow-left img, .arrow-right img {
+    width: 32px;
+    height: 32px;
+}
+.arrow-left {
+    height: 292px;  
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.arrow-right {
+    height: 292px;  
+    display: flex;
+    align-items: center;
+}
+.block-photo img {
+    display: flex;
+}
+.block-photo {
+    padding-right: 39px;
+}
+ .block-photo-last {
+    padding-right: 21px;
+}
+p {
+    margin: 0;
+    padding-top: 20px;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.explore-more {
+    display: flex;
+    justify-content: end;
+    padding-top: 40px;
+    padding-right: 52px;
+}
+.link {
+    position: relative;
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(33, 158, 188);
+    text-decoration: none;
+}
+.link::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: rgb(33, 158, 188);
+    width: 146px;
+    height: 2px;
+    margin: 10px 0px;
+}
