@@ -18,10 +18,9 @@ z-index: -1;
 }
 header {
   margin: 0 auto;
-  max-width: 1179px;
+  width: 81.9%;
   padding-top: 75px;
   padding-bottom: 153px;
-  
 }
 .header-container {
   display: flex;
@@ -30,7 +29,9 @@ header {
 }
 .container-limitation {
   margin: 0 auto;
-  max-width: 1179px;
+  width: 81.9%;
+  display: flex;
+  justify-content: space-between;
 }
 .site-name {
   font-family: "Roboto", serif;
@@ -52,6 +53,7 @@ border: 2px solid white;
 background-color: transparent;
 cursor: pointer;
 position: relative;
+border: none;
 }
 .home button::after {
 content: '';
@@ -68,18 +70,6 @@ display: flex;
 justify-content: space-between;
 gap: 31px;
 align-items: end;
-}
-.image-text {
-display: flex;
-gap: 146px;
-}
-.ellipse {
-position: absolute;
-width: 7px;
-height: 7px;
-left: 583px;
-top: 88px;
-background: rgb(242, 153, 74);
 }
 .work-space {
 display: flex;
@@ -132,11 +122,17 @@ position: absolute;
 width: 1px;
 height: 420px;
 background-color: rgb(51, 51, 51);
-left: 615px;
+left: 594px;
 top: 8px;
 }
 .block-text {
 position: relative;
+padding-right: 114px;
+}
+.container-text-media {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
 }
 .play-icon {
 width: 85px;
@@ -211,3 +207,523 @@ margin-left: -22px;
 padding-top: 51px;
 padding-bottom: 51px;
 }
+@media (max-width:1280px) {
+.buttons {
+  gap: 29px;
+}
+header {
+  padding-top: 73px;
+  padding-bottom: 133px;
+}
+.site-name {
+  font-size: 30px;
+}
+.home button, .amenities button, 
+.contact button, .categore button {
+  font-size: 17px;
+}
+.home button::after {
+  width: 4px; 
+  height: 4px; 
+}
+.block-photo img {
+  width: 311px;
+  height: 433px;
+}
+.text-space {
+  font-size: 18px;
+  }
+h1 {
+  font-size: 55px;
+  padding-top: 1px;
+  padding-bottom: 71px;
+}
+.text-second { 
+  font-size: 13px;
+}
+.text-second::before {
+  border-radius: 2px;
+  width: 160px;
+  height: 3px;
+}
+.text-video {
+  font-size: 14px;
+  }
+.text-second { 
+  font-size: 16px;
+}
+.text-second::before {
+  width: 171px;
+  height: 5px;
+  top: -20px;
+}
+.block-text::after {
+  left: 513px;
+  top: 6px;
+  height: 351px;
+}
+.block-text {
+  position: relative;
+  padding-right: 68px;
+}
+.container-text-media {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.play-icon {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(63, 154, 183);
+  border-radius: 50%;
+  padding: 18px 10px 12px 23px;
+  }
+.play-icon img {
+  width: 19px;
+  height: 24px;
+}
+.container-icon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.block-video {
+  padding-top: 8px;
+}
+.icons, .facebook-icon {
+    gap: 12px;
+}
+.facebook-icon {
+    width: 30px;
+    height: 30px;
+    padding: 6px 8px 9px 8px;
+}
+.container-text {
+    font-size: 20px;
+}
+.container-clients {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    gap: 18px;
+}
+.container-img img {
+  width: 33px;
+  height: 33px;
+}
+.container-img img:nth-child(2) {
+  margin-left: -13px;
+}
+.container-img img:nth-child(3) {
+  margin-left: -13px;
+}
+.about-clients {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+}
+
+@media (max-width:1040px) {
+  .buttons {
+    gap: 23px;
+  }
+.search img {
+  width: 14px;
+  height: 14px;
+}
+header {
+  padding-top: 73px;
+  padding-bottom: 133px;
+}
+.site-name {
+  font-size: 27px;
+}
+.home button, .amenities button, 
+.contact button, .categore button {
+  font-size: 15px;
+}
+.home button::after {
+  width: 4px; 
+  height: 4px; 
+}
+.block-photo img {
+  width: 248px;
+  height: 360px;
+}
+.text-space {
+  font-size: 16px;
+  }
+.work-space {
+  gap: 229px;
+}
+h1 {
+  font-size: 44px;
+  padding-bottom: 49px;
+}
+.text-second { 
+  font-size: 12px;
+}
+.text-second::before {
+  border-radius: 2px;
+  width: 150px;
+  height: 3px;
+}
+.text-video {
+  font-size: 13px;
+  }
+.text-second { 
+  font-size: 13px;
+}
+.text-second::before {
+  width: 150px;
+  height: 4px;
+  top: -12px;
+}
+.block-text::after {
+  left: 375px;
+  height: 275px;
+}
+.block-text {
+  padding-right: 35px;
+}
+.container-text-media {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.play-icon {
+  width: 45px;
+  height: 45px;
+  padding: 14px 10px 12px 18px;
+  }
+.play-icon img {
+  width: 14px;
+  height: 17px;
+}
+.container-icon {
+  gap: 11px;
+}
+.block-video {
+  padding-top: 8px;
+}
+.icons, .facebook-icon {
+  gap: 9px;
+}
+.facebook-icon {
+  width: 27px;
+  height: 27px;
+  padding: 7px 8px 9px 9px;
+}
+.container-text {
+  font-size: 16px;
+}
+.container-clients {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  gap: 16px;
+}
+.container-img img {
+  width: 33px;
+  height: 33px;
+}
+.container-img img:nth-child(2) {
+  margin-left: -13px;
+}
+.container-img img:nth-child(3) {
+  margin-left: -13px;
+}
+.about-clients {
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+span {
+  font-size: 17px;
+  }
+.icons img{
+  width: 13px;
+  height: 13px  ;
+}
+.facebook-icon img {
+  width: 11px;
+  height: 12px;
+}
+}
+
+@media (max-width:785px) {
+.buttons {
+  gap: 12px;
+}
+.category-search {
+  gap: 12px;
+}
+.search img {
+  width: 14px;
+  height: 14px;
+}
+header {
+  padding-top: 70px;
+  padding-bottom: 98px;
+}
+.site-name {
+  font-size: 25px;
+}
+.home button, .amenities button, 
+.contact button, .categore button {
+  font-size: 15px;
+}
+.home button::after {
+  left: 23px;
+  top: 23px;
+}
+.block-photo img {
+  width: 201px;
+  height: 294px;
+}
+.text-space {
+  font-size: 15px;
+  }
+.work-space {
+  gap: 163px;
+}
+h1 {
+  font-size: 29px;
+  padding-bottom: 45px;
+  padding-top: 2px;
+}
+.text-second { 
+  font-size: 11px;
+}
+.text-second::before {
+  width: 113px;
+  height: 3px;
+  top: -8px;
+}
+.text-video {
+  font-size: 13px;
+  }
+.text-second { 
+  font-size: 13px;
+}
+.text-second::before {
+  width: 134px;
+  height: 3px;
+  top: -9px;
+}
+.block-text::after {
+  left: 350px;
+  height: 226px;
+}
+.block-text {
+  padding-right: 11px;
+}
+.container-text-media {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.play-icon {
+  width: 45px;
+  height: 45px;
+  padding: 14px 10px 12px 18px;
+  }
+.play-icon img {
+  width: 14px;
+  height: 17px;
+}
+.container-icon {
+  gap: 8px;
+}
+.block-video {
+  padding-top: 8px;
+}
+.icons, .facebook-icon {
+  gap: 9px;
+}
+.facebook-icon {
+  width: 24px;
+  height: 24px;
+  padding: 6px 8px 9px 8px;
+}
+.container-text {
+  font-size: 15px;
+}
+.container-clients {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 11px;
+}
+.container-img img {
+  width: 30px;
+  height: 30px;
+}
+.container-img img:nth-child(2) {
+  margin-left: -12px;
+}
+.container-img img:nth-child(3) {
+  margin-left: -12px;
+}
+.about-clients {
+    padding-top: 33px;
+    padding-bottom: 33px;
+}
+span {
+  font-size: 16px;
+  }
+.icons img{
+  width: 12px;
+  height: 12px;
+}
+.facebook-icon img {
+  width: 10px;
+  height: 11px;
+}
+}
+
+@media (max-width:690px) {
+  .buttons {
+    padding-top: 4px;
+    order: 2;
+  }
+  .category-search {
+    gap: 12px;
+    align-self: flex-end;
+  }
+.container-limitation {
+  display: flex;
+  flex-direction: column;
+}
+  .search img {
+    width: 14px;
+    height: 14px;
+  }
+  .header-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .site-name, .category-search {
+    order: 1;
+  }
+  header {
+    padding-bottom: 28px;
+  }
+  .site-name {
+    font-size: 24px;
+    align-self: flex-start;
+  }
+  .home button, .amenities button, 
+  .contact button, .categore button {
+    font-size: 15px;
+  }
+  .home button::after {
+    left: 23px;
+    top: 23px;
+  }
+  .block-photo img {
+    padding-top: 2px;
+    display: flex;
+    align-self: center;
+    width: 208px;
+    height: 259px;
+  }
+  .block-photo {
+    padding-top: 0px;
+  }
+  .text-space {
+    font-size: 15px;
+    }
+  .work-space {
+    gap: 163px;
+  }
+  h1 {
+    font-size: 29px;
+    padding-bottom: 45px;
+    padding-top: 2px;
+  }
+  .text-second { 
+    font-size: 11px;
+  }
+  .text-second::before {
+    width: 113px;
+    height: 3px;
+    top: -8px;
+  }
+  .text-video {
+    font-size: 13px;
+    }
+  .text-second { 
+    font-size: 13px;
+  }
+  .text-second::before {
+    width: 134px;
+    height: 3px;
+    top: -9px;
+  }
+  .block-text::after {
+    left: 365px;
+    height: 226px;
+  }
+  .block-text {
+    padding-right: 11px;
+  }
+  .container-text-media {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding-top: 15px;
+  }
+  .play-icon {
+    width: 45px;
+    height: 45px;
+    padding: 14px 10px 12px 18px;
+    }
+  .play-icon img {
+    width: 14px;
+    height: 17px;
+  }
+  .container-icon {
+    gap: 8px;
+  }
+  .block-video {
+    padding-top: 8px;
+  }
+  .icons, .facebook-icon {
+    gap: 9px;
+  }
+  .facebook-icon {
+    width: 24px;
+    height: 24px;
+    padding: 6px 8px 9px 8px;
+  }
+  .container-text {
+    font-size: 15px;
+  }
+  .container-clients {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 11px;
+  }
+  .container-img img {
+    width: 30px;
+    height: 30px;
+  }
+  .container-img img:nth-child(2) {
+    margin-left: -12px;
+  }
+  .container-img img:nth-child(3) {
+    margin-left: -12px;
+  }
+  .about-clients {
+      padding-top: 33px;
+      padding-bottom: 33px;
+  }
+  span {
+    font-size: 16px;
+    }
+  .icons img{
+    width: 12px;
+    height: 12px;
+  }
+  .facebook-icon img {
+    width: 10px;
+    height: 11px;
+  }
+  }
