@@ -12,7 +12,7 @@ position: absolute;
 background-color: rgb(249, 249, 249);
 width: 118px;
 height: 100%;  
-left: 262px;
+left: 17.05%;;
 top: 0;
 z-index: -1;
 }
@@ -83,6 +83,7 @@ color: rgb(242, 153, 74);
 }
 .block-photo {
 padding-top: 7px;
+width: 40%;
 }
 h1 {
 font-family: "Nunito Sans", serif;
@@ -581,7 +582,8 @@ span {
 @media (max-width:690px) {
   .buttons {
     padding-top: 4px;
-    order: 2;
+    order: 1;
+    width: 100%;
   }
   .category-search {
     gap: 12px;
@@ -600,7 +602,7 @@ span {
     justify-content: center;
   }
   .site-name, .category-search {
-    order: 1;
+    order: 2;
   }
   header {
     padding-bottom: 28px;
