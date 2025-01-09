@@ -3,7 +3,6 @@
   }
 body {
     margin: 0 auto;
-    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -53,7 +52,6 @@ h1 {
     font-family: "Lora", serif;
     font-size: 88px;
     font-weight: 600;
-    color: rgb(38, 43, 44);
     margin: 0;
     padding-bottom: 117px;
 }
@@ -72,20 +70,17 @@ h2 {
     font-family: "Lora", serif;
     font-size: 32px;
     font-weight: 600;
-    color: rgb(38, 43, 44);
     margin: 0;
 }
 .button-country button {
     width: 124px;
     height: 51px;
     box-sizing: border-box;
-    border: 1px solid rgb(38, 43, 44);
     border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     background: 0;
-    color: rgb(38, 43, 44);
     font-family: "Inter", serif;
     font-size: 24px;
     font-weight: 500;
@@ -127,7 +122,6 @@ p {
     font-family: "Inter", serif;
     font-size: 20px;
     font-weight: 600;
-    color: rgb(38, 43, 44);
 }
 .explore-more {
     display: flex;
@@ -148,7 +142,7 @@ p {
     display: block;
     position: absolute;
     background-color: rgb(33, 158, 188);
-    width: 157px;
+    width: 146px;
     height: 2px;
     margin: 10px 0px;
 }
@@ -346,6 +340,10 @@ p {
     }
     .button-country img {
         padding-left: 8px;
+    }
+    .places-photos {
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .arrow-left img, .arrow-right img {
         width: 25px;
